@@ -1,0 +1,13 @@
+.Header {
+  background-color: #282c34;
+  min-height: 10vh;
+  display: flex;
+}
+
+.userName {
+  display: inline-block;
+  color: white;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
