@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div className="App">
-      <UserContext.Provider value={{name, setName}}>
+      <UserContext.Provider value={{userName: name, setUserName: setName}}>
         <Header />
         <Routes>
           <Route path="/" element={<HomePage />} />

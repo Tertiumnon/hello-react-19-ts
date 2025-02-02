@@ -5,7 +5,7 @@ import type { UserContextType } from '../../contexts/UserContextType';
 import NavBar from '../NavBar/NavBar';
 
 function Header() {
-  const { name } = useContext(UserContext) as unknown as UserContextType;
+  const { userName: name } = useContext(UserContext) as unknown as UserContextType;
 
   return (
     <header className="Header">
