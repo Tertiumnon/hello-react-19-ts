@@ -11,6 +11,9 @@ function NavBar() {
       <div className="navItem">
         <NavLink to="/push-the-btn">Push the button</NavLink>
       </div>
+      <div className="navItem">
+        <NavLink to="/what-time">What time</NavLink>
+      </div>
     </nav>
   );
 }

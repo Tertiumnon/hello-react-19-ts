@@ -10,13 +10,12 @@ function HomePage() {
   const [userNameInpVal, setUserNameInpVal] = React.useState('');
   //
   const onSaveBtnClick = () => {
+    if (!userNameInpVal) alert('Please enter your name!');
     setUserName(userNameInpVal);
   };
   // renders
-  const renderCountRef = React.useRef(0);
   useEffect(() => {
     userNameInpRef.current?.focus();
-    renderCountRef.current += 1;
   }, []);
 
   return (
@@ -35,7 +34,6 @@ function HomePage() {
           Save
         </button>
       </p>
-      <p>Render count: {renderCountRef.current}</p>
     </div>
   );
 }
